@@ -31,7 +31,8 @@
           -z $(arg init_pos_z)
           -model youbot">
   </node>
-
+  <node name="arm_controller_spawner" pkg="pr2_controller_manager" type="spawner" args="arm_controller">
+   </node>
   <!-- launch joint state controller -->
   <include file="$(find youbot_gazebo_control)/launch/joint_state_controller.launch" />
 
