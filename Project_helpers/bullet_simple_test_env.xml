@@ -1,0 +1,40 @@
+<Environment>
+	<KinBody name="table2">
+	<Body name="body1" type="static">
+		<mass type="custom">
+		<total>0</total>
+		<com>0 0 0</com>
+		</mass>
+		<Geom type="trimesh">
+		
+		<data>table2_fixed.iv</data>
+		<Render>table2_fixed.iv</Render>
+               
+		</Geom>
+	</Body>
+	</KinBody>
+	
+	
+	
+	<KinBody name="ikea_mug">
+	<Body name="body1" type="dynamic">
+		
+		<Translation> 0.0  0 0.2</Translation>
+		<mass type="custom">
+		<total>0.5</total>
+		
+		<inertia>0.0015977000000000001 0.0 0.0 0.0 0.00139854 0.0 0.0 0.0 0.0012531599999999999</inertia>
+		<!--
+		<com> 0.0005  0.0039  0.0533</com>
+		
+		<com>0.000862596 -1.45978e-05 1.145016</com>
+		-->
+		</mass>
+		<Geom type="trimesh">
+		<data>ikea_mug1.wrl</data>
+		<Render>ikea_mug1.wrl</Render>
+		<!--collision>ikea_mug1.wrl 2</collision-->
+		</Geom>
+	</Body>
+	</KinBody>
+</Environment>
