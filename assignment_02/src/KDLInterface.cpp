@@ -9,7 +9,7 @@ KDLInterface::KDLInterface() {
 
 bool KDLInterface::checkJointLimits(KDL::JntArray jointpositions){
 	for (int i = 0; i < joinpositions.rows(); i++){
-		if ((jointpositions[i] <= jointMax[i]) && (jointposition[i] >= jointMin[i]))
+		if (!((jointpositions[i] <= jointMax[i]) && (jointposition[i] >= jointMin[i])))
 			return false;
 	} 
 	return true;
